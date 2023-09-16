@@ -17,7 +17,6 @@ const createGrid = function (squares, squareNum, squareSide) {
     //   squares[i].style.height = "auto";
     squares[i].style.width = `${squareSide}px`;
     squares[i].style.height = `${squareSide}px`;
-
     squares[i].style.border = "1px solid rgb(156, 156, 156)";
     squares[i].addEventListener("mouseover", changeBoxColor);
   }
