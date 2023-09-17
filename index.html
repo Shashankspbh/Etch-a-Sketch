@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -11,15 +11,23 @@
     <div class="header">Etch-a-Sketch</div>
     <div class="sketch-container">
       <div class="input-container">
-        <div class="slidecontainer">
-          <input
-            type="range"
-            min="10"
-            max="50"
-            value="10"
-            class="slider"
-            id="myRange"
-          />
+        <div class="button-container">
+          <div class="button black-button selected">Black</div>
+          <div class="button rainbow-button">Rainbow</div>
+          <div class="button eraser-button">Eraser</div>
+        </div>
+        <div class="range-container">
+          <div class="slide-container">
+            <input
+              type="range"
+              min="10"
+              max="50"
+              value="30"
+              class="slider"
+              id="myRange"
+              style="cursor: pointer"
+            />
+          </div>
           <div class="range"></div>
         </div>
       </div>
@@ -27,6 +35,5 @@
         <div class="grid"></div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.3.1/decimal.min.js"></script>
   </body>
 </html>
